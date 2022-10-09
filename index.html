@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Acme&family=IBM+Plex+Serif:wght@300&family=Lobster&family=Roboto:ital,wght@1,300&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Check Your BMI</h1>
+      <i class="bi bi-brightness-high" id="toggleDark"></i>
+    </header>
+
+    <section>
+      <img src="img/mp.png" alt="Motion Picture" class="image" />
+      <p class="text">
+        Hi There... <br />
+        Body Mass Index atau dalam bahasa Indonesia Index Masa Tubuh adalah
+        metode yang digunakan untuk menentukan status gizi seseorang.
+        Perhitungan dilakukan dengan memasukan berat badan dan tinggi badan.
+        Standar normal ideal yang digunakan untuk orang dewasa berusia di atas
+        20 tahun adalah IMT antara 20 hingga 25,0. Seseorang dikatakan memiliki
+        berat badan berlebih jika IMT antara 25,0 hingga 29,9. Jika IMT kurang
+        dari 20 berarti berat badan kurang dan IMT lebih dari 30 berarti
+        obesitas.
+      </p>
+    </section>
+    <div class="container">
+      <div class="buttons">
+        <a href="#tml" class="btn btn-1">Ayo Hitung Index Tubuh</a>
+      </div>
+    </div>
+
+    <div id="tml">
+      <img src="img/mp2.png" alt="Motion Picture" class="image2" />
+
+      <div id="wrapper">
+        <p>
+          Height in ( centimeter ) :
+          <input type="text" id="height" /><br /><span id="height_error"></span>
+        </p>
+
+        <p>
+          Weight in ( kilograms ) : <input type="text" id="weight" /><br /><span
+            id="weight_error"></span>
+        </p>
+
+        <button id="btn">Calculate</button>
+        <p id="output"></p>
+      </div>
+    </div>
+  </body>
+</html>
